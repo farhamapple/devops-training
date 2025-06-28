@@ -205,6 +205,11 @@ Cek IP yang ada di Container
 docker network inspect net-A
 ```
 
+Cek Disconnect Network yang ada di Container
+```
+docker network disconnect net-A ct-nginx-a
+```
+
 ## Docker Logging and Troubleshooting
 Show information about container
 ```
