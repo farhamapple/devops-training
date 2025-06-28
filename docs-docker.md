@@ -192,7 +192,17 @@ docker run -d -p host:container -v vol-app:/path/on/ct --network net-A image-nam
 
 Connect exist container to network
 ```
+docker network connect ct-new net-A
+```
+
+Connect exist container to network link with 2 container
+```
 docker network connect --link ct-new net-A ct-exist
+```
+
+Cek IP yang ada di Container
+```
+docker network inspect net-A
 ```
 
 ## Docker Logging and Troubleshooting
