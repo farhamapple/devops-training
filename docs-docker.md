@@ -103,6 +103,10 @@ Copy File to container image
 docker cp [nama_file] [nama_container]:[posisi_direktory_pada_container]
 Contoh :
 docker cp ./index.html ct-ubuntu:/usr/share/nginx/html/index.html
+
+Kalau Mau semua File
+docker cp ./project-html/. nama_container:/usr/share/nginx/html
+
 ```
 
 Backup container to container image
