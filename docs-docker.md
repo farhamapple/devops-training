@@ -98,6 +98,12 @@ apt install nginx
 apt list --installed | grep nginx
 nginx -g "daemon off;"
 ```
+Copy File to container image
+```
+docker cp [nama_file] [nama_container]:[posisi_direktory_pada_container]
+Contoh :
+docker cp ./index.html ct-ubuntu:/usr/share/nginx/html/index.html
+```
 
 Backup container to container image
 ```
